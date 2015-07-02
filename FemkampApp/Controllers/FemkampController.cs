@@ -24,14 +24,14 @@ namespace FemkampApp.Controllers
 
         public IHttpActionResult GetProduct(int id)
         {
-            var femkamp = femkamp.FirstOrDefault((p) => p.Id == id);
-            if (femkamp == null)
+            var femkampVariabel = femkamp.FirstOrDefault((p) => p.Id == id);
+            if (femkampVariabel == null)
             {
                 return NotFound();
             }
-            return Ok(femkamp);
+            return Ok(femkampVariabel);
         }
     }
 }
 
-// Source: http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
+///</source> Source: http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
